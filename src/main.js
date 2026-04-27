@@ -18,8 +18,10 @@ import {
     Textarea, Toast,
     ToastService, Toolbar, Tooltip
 } from "primevue";
+import i18n from "./i18n.js";
 
 createApp(App)
+    .use(i18n)
     .use(PrimeVue, { theme: { preset: Material}, ripple: true})
     .use(ConfirmationService)
     .use(DialogService)
